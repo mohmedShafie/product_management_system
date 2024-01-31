@@ -44,12 +44,6 @@ class CategoryResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                DeleteAction::make()->before(function (Request $request) {
-        $var = Category::find($request->id);
-        if ($var->product)
-        return redirect()->back()->with("this category can not deleted");
-        
-    })
             ])
             ->bulkActions([
             ]);
