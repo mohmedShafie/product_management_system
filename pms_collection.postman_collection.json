@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "2d99ce23-a87e-403f-80b1-0df3426d16a2",
+		"name": "pms_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27812441"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "show_product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/index",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"index"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/delete_product/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"delete_product",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit_product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/edit_product/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"edit_product",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "phone",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "smart phone",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "35",
+									"type": "text"
+								},
+								{
+									"key": "is_avlibale",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/photos/40275436-v2_xlarge.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/update_product/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"update_product",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "show_category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/show_category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"show_category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "women clothes",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "womens wear",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/add_category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"add_category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/delete_category/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"delete_category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "laptop",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "smart laptops",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/update_category/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"update_category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
